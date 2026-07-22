@@ -66,7 +66,7 @@ Goose reads the logs, finds the issue, restarts the service, and verifies it's b
 │  Goose has:                                 │
 │  • Terminal access (systemctl, tail, curl)  │
 │  • Hermes knowledge (paths, configs, fixes) │
-│  • Free model (Qwen 3.7 Plus / OpenRouter)  │
+│  • Model: Qwen 3.7 Plus / OpenRouter)  │
 └─────────────────────────────────────────────┘
 ```
 
@@ -102,7 +102,7 @@ axels-goose run -c "fix it"   # one-shot command
 |---------|-------------|
 | 🔍 **Auto-diagnosis** | Reads Hermes logs, finds root cause |
 | 🔧 **One-click fix** | Restarts services, kills stale ports, validates config |
-| 🆓 **Zero cost** | Uses Qwen 3.7 Plus — free on OpenRouter |
+| 🆓 **Zero cost** | Uses Qwen 3.7 Plus — via OpenRouter |
 | 🧠 **Pre-loaded context** | Goose knows Hermes paths, commands, and failure patterns |
 | 🔌 **MCP-ready** | Memory, Computer Controller, Autovisualiser servers pre-configured |
 | 📦 **Single binary** | Just `axels-goose` — no dependencies beyond Goose |

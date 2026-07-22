@@ -64,7 +64,7 @@ Goose читает логи, находит проблему, перезапус
 │  У Goose есть:                              │
 │  • Доступ к терминалу (systemctl, tail)    │
 │  • Знание Hermes (пути, конфиги, фиксы)    │
-│  • Бесплатная модель (Qwen 3.7 Plus)       │
+│  • Модель: Qwen 3.7 Plus)       │
 └─────────────────────────────────────────────┘
 ```
 
@@ -82,7 +82,7 @@ curl -fsSL https://raw.githubusercontent.com/axelfreeman/axels-goose/main/instal
 1. [Goose CLI](https://block.github.io/goose/) (если не установлен)
 2. Developer extension (доступ к терминалу)
 3. MCP-серверы (memory, computer controller, autovisualiser)
-4. Qwen 3.7 Plus (бесплатно, через OpenRouter)
+4. Qwen 3.7 Plus (через OpenRouter)
 5. Команду `axels-goose`
 
 ### Экстренное использование
@@ -100,7 +100,7 @@ axels-goose run -c "почини"   # одноразовая команда
 |-------------|----------|
 | 🔍 **Авто-диагностика** | Читает логи Hermes, находит причину |
 | 🔧 **Починка в один клик** | Перезапуск сервисов, убийство зависших портов, валидация конфига |
-| 🆓 **Нулевая стоимость** | Qwen 3.7 Plus — бесплатно на OpenRouter |
+| 🆓 **Нулевая стоимость** | Qwen 3.7 Plus — через OpenRouter |
 | 🧠 **Предзагруженный контекст** | Goose знает пути, команды и типовые ошибки Hermes |
 | 🔌 **MCP-ready** | Memory, Computer Controller, Autovisualiser — предварительно настроены |
 | 📦 **Один бинарник** | Только `axels-goose` — никаких зависимостей кроме Goose |
