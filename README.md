@@ -84,7 +84,7 @@ This installs:
 1. [Goose CLI](https://block.github.io/goose/) (if not present)
 2. Developer extension (terminal access)
 3. MCP servers (memory, computer controller, autovisualiser)
-4. Qwen 3.7 Plus model (free, via OpenRouter)
+4. Qwen 3.7 Plus model (via OpenRouter)
 5. The `axels-goose` command
 
 ### Emergency Use
