@@ -1,0 +1,15 @@
+#!/bin/bash
+# Axel's Goose — Emergency Hermes Agent Recovery
+# Usage: axels-goose [command]
+export PATH=/root/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+export HOME=/root
+export OPENROUTER_API_KEY="$(grep OPENROUTER_API_KEY /root/.hermes/profiles/coder/.env | cut -d= -f2)"
+export GOOSE_PROVIDER=openrouter
+export GOOSE_MODEL=qwen/qwen3.7-plus
+export GOOSE_MOIM_MESSAGE_TEXT="You are Axel's Goose emergency engineer. Fix Hermes Agent (hermes-coder.service).
+Diagnose: systemctl status hermes-coder.service, tail -50 /root/.hermes/profiles/coder/logs/gateway.log, ss -tlnp | grep 18765
+Fix: systemctl restart hermes-coder.service, fuser -k PORT
+Config: /root/.hermes/profiles/coder/config.yaml, .env: /root/.hermes/profiles/coder/.env
+Check: systemctl is-active hermes-coder.service
+Work fast. Don't ask — fix."
+if [ $# -eq 0 ]; then exec /root/.local/bin/goose session; else exec /root/.local/bin/goose "$@"; fi
