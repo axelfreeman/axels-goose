@@ -2,8 +2,6 @@
 
 > *When your AI agent is dead and only SSH works — Goose brings it back.*
 
-[🇷🇺 Читать на русском](README.ru.md)
-
 [![Hermes Agent](https://img.shields.io/badge/hermes--agent-recovery-blue)](https://github.com/NousResearch/hermes-agent)
 [![Goose AI](https://img.shields.io/badge/goose--ai-rescue-orange)](https://block.github.io/goose/)
 [![Emergency Fix](https://img.shields.io/badge/emergency--fix-red)]()
@@ -154,6 +152,8 @@ axels-goose session                     # explicit session mode
 - [Hermeneutic](https://github.com/hermes-labs-ai/hermeneutic) — Evidence-first drift gate for AI agents
 
 ---
+
+[Читать на русском](README.ru.md)
 
 ## License
 
